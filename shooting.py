@@ -1,6 +1,6 @@
 from flask import Flask, redirect
 
-app = Flask(__name__, static_url_path='', static_folder="vue/dist")
+app = Flask(__name__, static_url_path='', static_folder="vueProject/dist")
 
 
 @app.route('/')

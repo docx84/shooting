@@ -1,8 +1,8 @@
 .DS_Store
-/vue/node_modules
-/vue/dist
+vueProject/node_modules
+vueProject/dist
 
-/tests/e2e/reports/
+vueProject/tests/e2e/reports/
 selenium-debug.log
 
 # local env files
