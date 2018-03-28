@@ -7,6 +7,11 @@ export default new Vuex.Store({
     state: {
         players: {}
     },
+    getters: {
+        getPlayerCopy(state, pid) {
+            return JSON.parse(JSON.stringify(state.players[pid]))
+        }
+    },
     mutations: {
         addPlayer(state, player) {
             state.players[player.doc_id] = player.player;
