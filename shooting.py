@@ -53,7 +53,7 @@ def addPlayer():
 
 @app.route("/data/players", methods=["GET"])
 def getPlayers():
-    return jsonify({"results": data.db.all()})
+    return jsonify({"results": {i.doc_id:i for i in data.db.all()}})
 
 
 @app.route("/data/players/<int:doc_id>", methods=["PUT"])
